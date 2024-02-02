@@ -1,7 +1,7 @@
 # nilayarangil.com
-Welcome to my digital space! I'm Nilay Arangil, a coding enthusiast who loves to dive into the worlds of Python and C#. On this website, I share my passion through engaging courses, connecting with learners worldwide, and showcasing projects that bring code to life with Raspberry Pi.
+Welcome to my digital space! I'm Nilay Arangil, a coding enthusiast who loves to dive into the world of Programing. On this website, I share my passion through engaging courses, connecting with learners worldwide, and showcasing projects that bring code to life with Raspberry Pi.
 
-Beyond the screen, my love for music shines through. As a pianist and violinist, I enjoyed being part of the varsity group during my middle school years. The harmonious notes add a unique touch to my journey.
+Beyond the screen, my love for music shines through. As a pianist and violinist, I enjoyed being part of the varsity group during my middle school years. 
 
 Sports have played a significant role in my life, particularly tennis. The UTR tournament trophies and the pride of leading my middle school team to the 2020 district championships are moments I cherish.
 
