@@ -113,3 +113,30 @@
     left: 0%;
   }
 }
+
+body {
+      background-color: #f6f7f6;
+      font-family: "Poppins", sans-serif;
+    }
+
+    .navbar {
+      background-color: #ffffff;
+    }
+
+    .logo {
+      color: #5fcf80;
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    .footer {
+      background-color: #eef0ef;
+      color: #37423b;
+    }
+
+    .footer span,
+    .footer div {
+      margin-top:10px;
+      font-size: 14px;
+      color: #000000;
+    }
