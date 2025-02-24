@@ -32,6 +32,32 @@
      <!-- Template Main CSS File -->
      <link href="assets/css/style.css" rel="stylesheet"> 
      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+      <style>
+         .timeline {
+  border-left: 1px solid hsl(0, 0%, 90%);
+  position: relative;
+  list-style: none;
+}
+
+.timeline .timeline-item {
+  position: relative;
+}
+
+.timeline .timeline-item:after {
+  position: absolute;
+  display: block;
+  top: 0;
+}
+
+.timeline .timeline-item:after {
+  background-color: hsl(0, 0%, 90%);
+  left: -38px;
+  border-radius: 50%;
+  height: 11px;
+  width: 11px;
+  content: "";
+}
+      </style>
    </head>
    <body>
       <!-- ======= Header ======= -->
@@ -76,149 +102,56 @@
                      <img src="https://firstracquet.org/wp-content/uploads/2023/06/41ed466d-af85-4065-9681-2006932a48af.jpg" class="img-fluid" alt="">
                   </div>
                   <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
-                    
-      <div class="timeline">
-        <div class="timeline-item left">
-          <div class="timeline-badge">2018</div>
-          <div class="timeline-content">
-            <h4>Learning Python</h4>
-            <p>Started learning Python, HTML and CSS</p>
-          </div>
-        </div>
-        <div class="timeline-item right">
-          <div class="timeline-badge">2019</div>
-          <div class="timeline-content">
-            <h4>Raspberry Pi Projects</h4>
-            <p>
-              Developed Raspberry Pi projects using Python 3, focusing on home
-              automation and sensor integration
-            </p>
-          </div>
-          <p />
-          <div class="timeline-content">
-            <h4>Created GitHub Repo</h4>
-            <p>
-              Created GitHub repo at
-              <a href="https://github.com/nilayarangil" target="_blank"
-                >github.com/nilayarangil</a
-              >
-            </p>
-          </div>
-        </div>
-
-        <div class="timeline-item right">
-          <div class="timeline-badge">2020</div>
-          <div class="timeline-content">
-            <h4>HTML, CSS and BootStrap</h4>
-            <p>Learned to create web page using HTML, CSS and BootStrap 5</p>
-          </div>
-          <p />
-          <div class="timeline-content">
-            <h4>Django for Web Development</h4>
-            <p>Learned Web development using Django and Python</p>
-          </div>
-        </div>
-        <div class="timeline-item right">
-          <div class="timeline-badge">2021</div>
-          <div class="timeline-content">
-            <h4>Web Development using ASP.NET</h4>
-            <p>Learned Web development using C#, ASP.NET and MVC Framework</p>
-          </div>
-        </div>
-
-        <div class="timeline-item left">
-          <div class="timeline-badge">2022</div>
-          <div class="timeline-content">
-            <h4>houstonmentors.org</h4>
-            <p>
-              Launched
-              <a href="https://nilayarangil.com/houstonmentors/" target="_blank"
-                >houstonmentors.org</a
-              >
-              A Non-Profit organisation to teach python and number sense to
-              Houston communities.
-            </p>
-          </div>
-          <p></p>
-          <div class="timeline-content">
-            <h4>firstraquet.org</h4>
-            <p>
-              Joined as Regional Coordinator at firstraquet.org to promote
-              tennis in underprivileged communities in Angola
-            </p>
-          </div>
-        </div>
-
-        <div class="timeline-item right">
-          <div class="timeline-badge">2023</div>
-          <div class="timeline-content">
-            <h4>Coaching and Mentoring</h4>
-            <p>
-              Expanded coaching beyond Houston to include C#, Raspberry Pi, and
-              web development for students and engineers in India
-            </p>
-          </div>
-          <p />
-          <div class="timeline-content">
-            <h4>nilayarangil.com</h4>
-            <p>
-              Launched
-              <a href="https://nilayarangil.com" target="_blank"
-                >nilayarangil.com</a
-              >
-              as a platform to promote volunteer organizations in Houston,
-              showcase courses, projects and share my journey
-            </p>
-          </div>
-          <p />
-          <div class="timeline-content">
-            <h4>CourtMate Autonomous Robot</h4>
-            <p>
-              Started designing CourtMate, an autonomous robot aimed at
-              revolutionizing tennis court maintenance using Raspberry Pi,
-              OpenCV, and TensorFlow Lite
-            </p>
-          </div>
-        </div>
-        <div class="timeline-item right">
-          <div class="timeline-badge">2024</div>
-          <div class="timeline-content">
-            <h4>Stringing Job Portal</h4>
-            <p>
-              Developed portal for firstracquet.org to track racquet stringing
-              activities using ASP.NET, C#, MVC framework and SQL Server
-            </p>
-          </div>
-
-          <p />
-          <div class="timeline-content">
-            <h4>Azure AI Services</h4>
-            <p>
-              Began learning Azure AI services to integrate artificial
-              intelligence capabilities to projects.
-            </p>
-          </div>
-          <p></p>
-          <div class="timeline-content">
-            <h4>Machine Learning Specialization</h4>
-            <p>
-              Joined the Machine Learning Specialization, a foundational online
-              program developed in collaboration with DeepLearning.AI and
-              Stanford Online
-            </p>
-          </div>
-          <p></p>
-          <div class="timeline-content">
-            <h4>Academy for Machine Learning</h4>
-            <p>
-              Attending the Academy for Machine Learning summer program at UT
-              Austin to gain hands-on experience in machine learning, model
-              coding, and exploring new technologies with professors and
-              industry experts
-            </p>
-          </div>
-        </div>
-      </div>
+                    <!-- Section: Timeline -->
+                     <section class="py-5">
+                       <ul class="timeline">
+                         <li class="timeline-item mb-5">
+                           <h5 class="fw-bold">Our company starts its operations</h5>
+                           <p class="text-muted mb-2 fw-bold">11 March 2020</p>
+                           <p class="text-muted">
+                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+                             necessitatibus adipisci, ad alias, voluptate pariatur officia
+                             repellendus repellat inventore fugit perferendis totam dolor
+                             voluptas et corrupti distinctio maxime corporis optio?
+                           </p>
+                         </li>
+                     
+                         <li class="timeline-item mb-5">
+                           <h5 class="fw-bold">First customer</h5>
+                           <p class="text-muted mb-2 fw-bold">19 March 2020</p>
+                           <p class="text-muted">
+                             Quisque ornare dui nibh, sagittis egestas nisi luctus nec. Sed
+                             aliquet laoreet sapien, eget pulvinar lectus maximus vel.
+                             Phasellus suscipit porta mattis.
+                           </p>
+                         </li>
+                     
+                         <li class="timeline-item mb-5">
+                           <h5 class="fw-bold">Our team exceeds 10 people</h5>
+                           <p class="text-muted mb-2 fw-bold">24 June 2020</p>
+                           <p class="text-muted">
+                             Orci varius natoque penatibus et magnis dis parturient montes,
+                             nascetur ridiculus mus. Nulla ullamcorper arcu lacus, maximus
+                             facilisis erat pellentesque nec. Duis et dui maximus dui aliquam
+                             convallis. Quisque consectetur purus erat, et ullamcorper sapien
+                             tincidunt vitae.
+                           </p>
+                         </li>
+                     
+                         <li class="timeline-item mb-5">
+                           <h5 class="fw-bold">Earned the first million $!</h5>
+                           <p class="text-muted mb-2 fw-bold">15 October 2020</p>
+                           <p class="text-muted">
+                             Nulla ac tellus convallis, pulvinar nulla ac, fermentum diam. Sed
+                             et urna sit amet massa dapibus tristique non finibus ligula. Nam
+                             pharetra libero nibh, id feugiat tortor rhoncus vitae. Ut suscipit
+                             vulputate mattis.
+                           </p>
+                         </li>
+                       </ul>
+                     </section>
+                     <!-- Section: Timeline --> 
+     
    
                   </div>
                </div>
