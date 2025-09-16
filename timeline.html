@@ -2,8 +2,70 @@
 
 <html>
   <head>
-    <link rel="stylesheet" href="assets/css/timeline.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+   <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    .timeline {
+      position: relative;
+      margin: 50px 0;
+      list-style: none;
+      padding: 0;
+    }
+    .timeline::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: #dee2e6;
+      transform: translateX(-50%);
+    }
+    .timeline-item {
+      position: relative;
+      margin: 20px 0;
+      width: 50%;
+      padding: 0 20px;
+    }
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      top: 30px;
+      right: -8px;
+      width: 16px;
+      height: 16px;
+      background: #0d6efd;
+      border-radius: 50%;
+      z-index: 1;
+    }
+    .timeline-item-left {
+      left: 0;
+      text-align: right;
+    }
+    .timeline-item-left::before {
+      right: auto;
+      left: -8px;
+    }
+    .timeline-item-right {
+      left: 50%;
+    }
+    /* Mobile friendly */
+    @media (max-width: 767px) {
+      .timeline::before {
+        left: 8px;
+      }
+      .timeline-item {
+        width: 100%;
+        padding-left: 40px;
+        text-align: left !important;
+      }
+      .timeline-item::before {
+        left: 0 !important;
+      }
+    }
+  </style>
   </head>
   <body> 
   <nav class="navbar navbar-expand-sm">
@@ -34,161 +96,176 @@
       </ul>
     </div>
   </nav>
-  <section style="background-color: #F0F2F5;">
-  <div class="container py-5">
-    <div class="main-timeline-2">
-      <h3>My TimeLine</h3>
-      <div class="timeline-2 left-2">
-        <div class="card">
-          <div class="card-body p-4">
-            <h4 class="fw-bold mb-4">Learning Python</h4>
-            <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i>June 2018</p>
-            <p class="mb-0">Started learning Python, HTML and CSS.</p>
+ <div class="container">
+    <h2 class="text-center my-4">Timeline of Achievements</h2>
+    <ul class="timeline">
+
+      <li class="timeline-item timeline-item-left">
+        <div class="card bg-light shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title"><i class="bi bi-code-slash me-2"></i>Learning Python and Web Foundations</h5>
+            <h6 class="card-subtitle mb-2 text-muted">June 2018</h6>
+            <p class="card-text">Began foundational <a href="https://github.com/nilayarangil/PythonBasics" style="text-decoration:none;" target="_blank">learning</a> in Python, HTML, and CSS, establishing the base for future software development projects.</p>
           </div>
         </div>
-      </div>
-      <div class="timeline-2 right-2">
-        <div class="card">
-           <img src="assets/img/pi.jpg" class="card-img-top"
-            alt="Responsive image">
-          <div class="card-body p-4">
-            <h4 class="fw-bold mb-4">Raspberry Pi Projects</h4>
-            <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i>January 2019</p>
-            <p class="mb-0">Developed Raspberry Pi projects using Python 3, focusing on home
-              automation and sensor integration.</p>
+      </li>
+
+      <li class="timeline-item timeline-item-right">
+        <div class="card bg-secondary-subtle shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title"><i class="bi bi-cpu me-2"></i>Raspberry Pi Development Projects</h5>
+            <h6 class="card-subtitle mb-2 text-muted">January 2019</h6>
+            <p class="card-text">Built home automation and sensor-based <a href="https://github.com/nilayarangil/RaspberryPI" style="text-decoration:none;" target="_blank">solutions</a> using Raspberry Pi and Python 3, applying programming to real-world hardware integrations.</p>
           </div>
         </div>
-        <div class="card">          
-          <div class="card-body p-4">
-            <h4 class="fw-bold mb-4">Created GitHub Repo</h4>
-            <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i>June 2019</p>
-            <p class="mb-0">Created GitHub repo at <a href="https://github.com/nilayarangil" style="text-decoration:none;" target="_blank">github.com/nilayarangil</a></p>
+      </li>
+
+      <li class="timeline-item timeline-item-left">
+        <div class="card bg-info-subtle shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title"><i class="bi bi-github me-2"></i>GitHub Repository Creation</h5>
+            <h6 class="card-subtitle mb-2 text-muted">June 2019</h6>
+            <p class="card-text">Launched a GitHub repository <a href="https://github.com/nilayarangil" style="text-decoration:none;" target="_blank">github.com/nilayarangil</a> to share projects, track progress, and collaborate on open-source initiatives.</p>
           </div>
         </div>
-      </div>
-      <div class="timeline-2 left-2">
-        <div class="card">
-          <img src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/170862230/original/0e28e7960f2899c803bffab17a81ec4ea4a8c563/develop-front-end-websites-in-html-css-bootstrap-and-javascript.jpg" class="card-img-top"
-            alt="Responsive image">
-          <div class="card-body p-4">
-            <h4 class="fw-bold mb-4">HTML, CSS and BootStrap</h4>
-            <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i>January 2020</p>
-            <p class="mb-0">Learned to create and design web pages using HTML, CSS and BootStrap 5.</p>
+      </li>
+
+      <li class="timeline-item timeline-item-right">
+        <div class="card bg-success-subtle shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title"><i class="bi bi-window-sidebar me-2"></i>Front-End Web Development with Bootstrap</h5>
+            <h6 class="card-subtitle mb-2 text-muted">January 2020</h6>
+            <p class="card-text">Expanded skills in web design by mastering responsive layouts using HTML, CSS, and Bootstrap 5.</p>
           </div>
         </div>
-         <div class="card">          
-          <div class="card-body p-4">
-            <h4 class="fw-bold mb-4">Django for Web Development</h4>
-            <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i>June 2020</p>
-            <p class="mb-0">Learned Web development using Django and Python.</p>
+      </li>
+
+      <li class="timeline-item timeline-item-left">
+        <div class="card bg-warning-subtle shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title"><i class="bi bi-globe2 me-2"></i>Django for Web Applications</h5>
+            <h6 class="card-subtitle mb-2 text-muted">June 2020</h6>
+            <p class="card-text">Developed dynamic, data-driven <a href="https://github.com/nilayarangil/Eventviewer" style="text-decoration:none;" target="_blank">websites</a> using Django and Python, focusing on scalability and modular design.</p>
           </div>
         </div>
-      </div>
-      <div class="timeline-2 right-2">
-        <div class="card">
-          <img src="assets/img/aspnetcore.png" class="card-img-top"
-            alt="Responsive image">
-          <div class="card-body p-4">
-            <h4 class="fw-bold mb-4"> Web Development using ASP.NET Core</h4>
-            <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i>December 2021</p>
-            <p class="mb-0">Learned Web development using C#, ASP.NET Core and MVC Framework.</p>
+      </li>
+
+      <li class="timeline-item timeline-item-right">
+        <div class="card bg-danger-subtle shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title"><i class="bi bi-code-square me-2"></i>ASP.NET Core and MVC Framework</h5>
+            <h6 class="card-subtitle mb-2 text-muted">December 2021</h6>
+            <p class="card-text">Gained expertise in building robust web applications using C#, ASP.NET Core, and the MVC framework.</p>
           </div>
         </div>
-      </div>
-      <div class="timeline-2 left-2">
-         <div class="card">          
-          <div class="card-body p-4">
-            <h4 class="fw-bold mb-4">houstonmentors.org</h4>
-            <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i>January 2022</p>
-            <p class="mb-0"> Launched <a href="https://nilayarangil.com/houstonmentors/" style="text-decoration:none;" target="_blank">houstonmentors.org</a>, A Non-Profit organisation to teach python and number sense to Houston communities.
-            </p>
+      </li>
+
+      <li class="timeline-item timeline-item-left">
+        <div class="card bg-light shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title"><i class="bi bi-people-fill me-2"></i>Launch of houstonmentors.org</h5>
+            <h6 class="card-subtitle mb-2 text-muted">January 2022</h6>
+            <p class="card-text">Launched <a href="https://nilayarangil.com/houstonmentors/" style="text-decoration:none;" target="_blank">houstonmentors.org</a>, a nonprofit organization to provide free Python and number sense training to local communities in Houston.</p>
           </div>
         </div>
-        <div class="card">          
-          <div class="card-body p-4">
-            <h4 class="fw-bold mb-4">firstraquet.org</h4>
-            <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i>April 2022</p>
-            <p class="mb-0">  Joined as Regional Coordinator at <a href="firstraquet.org" style="text-decoration:none;" target="_blank">firstraquet.org</a> to promote
-              tennis in underprivileged communities in Angola.
-            </p>
-          </div>
-        </div>        
-      </div>
-       <div class="timeline-2 right-2">
-        <div class="card">
-          <img src="https://www.mtdtraining.com/wp-content/uploads/2022/09/coaching-and-mentoring.jpg" class="card-img-top"
-            alt="Responsive image">
-          <div class="card-body p-4">
-            <h4 class="fw-bold mb-4"> Coaching and Mentoring</h4>
-            <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i>May 2023</p>
-            <p class="mb-0">Expanded coaching beyond Houston to include C#, Raspberry Pi, and
-              Web development for high school students and engineering graduates in India.</p>
+      </li>
+
+      <li class="timeline-item timeline-item-right">
+        <div class="card bg-secondary-subtle shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title"><i class="bi bi-trophy-fill me-2"></i>Regional Coordinator - firstraquet.org</h5>
+            <h6 class="card-subtitle mb-2 text-muted">April 2022</h6>
+            <p class="card-text">Began serving as Regional Coordinator for <a href="https://firstracquet.org/executive-officers/" style="text-decoration:none;" target="_blank">firstraquet.org</a> to promote tennis development in underserved communities across Angola.</p>
           </div>
         </div>
-        <div class="card">         
-          <div class="card-body p-4">
-            <h4 class="fw-bold mb-4"> nilayarangil.com</h4>
-            <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i>June 2023</p>
-            <p class="mb-0"> Launched <a href="https://nilayarangil.com" style="text-decoration:none;" target="_blank">nilayarangil.com</a> as a platform to promote volunteer organizations in Houston,
-              showcase courses, projects and share my journey.
-            </p>
+      </li>
+
+      <li class="timeline-item timeline-item-left">
+        <div class="card bg-info-subtle shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title"><i class="bi bi-person-badge me-2"></i>Coaching and Mentorship Expansion</h5>
+            <h6 class="card-subtitle mb-2 text-muted">May 2023</h6>
+            <p class="card-text">Extended coaching <a href="https://nilayarangil.com/courses.html" style="text-decoration:none;" target="_blank">programs</a> to include Python, C#, Raspberry Pi, and web development for high school students and engineering graduates in India.</p>
           </div>
         </div>
-         <div class="card">        
-          <div class="card-body p-4">
-            <h4 class="fw-bold mb-4">Stringing Job Portal</h4>
-            <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i>November 2024</p>
-            <p class="mb-0"> Developed portal for firstracquet.org to track racquet stringing
-              activities using ASP.NET, C#, MVC framework and SQL Server.
-            </p>
-          </div>
-        </div> 
-         <div class="card">
-          <img src="assets/img/p7.png" class="card-img-top"
-            alt="Responsive image">
-          <div class="card-body p-4">
-            <h4 class="fw-bold mb-4"> CourtMate Autonomous Robot</h4>
-            <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i>December 2023</p>
-            <p class="mb-0">  Started designing CourtMate, an autonomous robot aimed at revolutionizing tennis court maintenance using Raspberry Pi, OpenCV, and TensorFlow Lite.
-            </p>
-          </div>
-        </div> 
-      </div>
-       <div class="timeline-2 left-2">       
-         <div class="card">
-          <img src="https://learn.microsoft.com/ka-ge/windows/images/azure-cognitive-services.png" class="card-img-top"
-            alt="Responsive image">
-          <div class="card-body p-4">
-            <h4 class="fw-bold mb-4">Azure AI Services</h4>
-            <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i>January 2024</p>
-            <p class="mb-0">  Began learning Azure AI services to integrate artificial intelligence capabilities to projects.
-            </p>
+      </li>
+
+      <li class="timeline-item timeline-item-right">
+        <div class="card bg-success-subtle shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title"><i class="bi bi-house-heart-fill me-2"></i>Launch of nilayarangil.com</h5>
+            <h6 class="card-subtitle mb-2 text-muted">June 2023</h6>
+            <p class="card-text">Launched <a href="https://nilayarangil.com" style="text-decoration:none; target="_blank">nilayarangil.com</a> to highlight volunteer initiatives, showcase projects, and share educational resources.</p>
           </div>
         </div>
-        <div class="card">
-          <img src="https://miro.medium.com/v2/resize:fit:1400/1*8LNWYIfSuwOKrWqJFVx0Mw.jpeg" class="card-img-top"
-            alt="Responsive image">
-          <div class="card-body p-4">
-            <h4 class="fw-bold mb-4">Machine Learning Specialization</h4>
-            <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i> January 2024</p>
-            <p class="mb-0"> Joined the Machine Learning Specialization, a foundational online program developed in collaboration with DeepLearning.AI and Stanford Online
-            </p>
+      </li>
+
+      <li class="timeline-item timeline-item-left">
+        <div class="card bg-warning-subtle shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title"><i class="bi bi-robot me-2"></i>CourtMate Autonomous Robot</h5>
+            <h6 class="card-subtitle mb-2 text-muted">December 2023</h6>
+            <p class="card-text">Started designing <a href="https://github.com/nilayarangil/CourtMate" style="text-decoration:none; target="_blank">CourtMate</a>, an autonomous robot for tennis court maintenance using Raspberry Pi, OpenCV, and TensorFlow Lite.</p>
           </div>
         </div>
-         <div class="card">
-          <img src="https://www.unite.ai/wp-content/uploads/2022/07/maincampus_hero.jpg" class="card-img-top"
-            alt="Responsive image">
-          <div class="card-body p-4">
-            <h4 class="fw-bold mb-4">Academy for Machine Learning</h4>
-            <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i> June 2024</p>
-            <p class="mb-0"> Attended the Academy for Machine Learning summer program at UT Austin to gain hands-on experience in machine learning, model coding, and exploring new technologies with professors and industry experts. View <a href="https://drive.google.com/file/d/13D1uBjlU9b3Wiv0iT6qVeVPaNKn4quUs/view?usp=sharing" style="text-decoration:none;color:green" target="_blank">Certificate</a>.
-            </p>
+      </li>
+
+      <li class="timeline-item timeline-item-right">
+        <div class="card bg-danger-subtle shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title"><i class="bi bi-cloud-arrow-up-fill me-2"></i>Exploring Azure AI Services</h5>
+            <h6 class="card-subtitle mb-2 text-muted">January 2024</h6>
+            <p class="card-text">Began integrating <a href="https://github.com/nilayarangil/AzureAIServices" style="text-decoration:none; target="_blank">Azure AI services</a> into projects, exploring natural language processing, computer vision, and cloud-based AI solutions.</p>
           </div>
-        </div>  
-      </div>
-    </div>
+        </div>
+      </li>
+
+      <li class="timeline-item timeline-item-left">
+        <div class="card bg-light shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title"><i class="bi bi-graph-up-arrow me-2"></i>Machine Learning Specialization</h5>
+            <h6 class="card-subtitle mb-2 text-muted">January 2024</h6>
+            <p class="card-text">Enrolled in the <a href="https://www.coursera.org/specializations/machine-learning-introduction/paidmedia?utm_medium=sem&utm_source=gg&utm_campaign=b2c_namer_machine-learning-introduction_stanford_ftcof_specializations_px_dr_bau_gg_sem_pr-bd_us-ca_en_m_hyb_16-10_x&campaignid=685340575&adgroupid=35524166541&device=c&keyword=ai%20machine%20learning%20certification&matchtype=b&network=g&devicemodel=&creativeid=650958196473&assetgroupid=&targetid=kwd-654619238119&extensionid=&placement=&gad_source=1&gad_campaignid=685340575&gbraid=0AAAAADdKX6YO1OQbrM27tH04mhUfOzaPz&gclid=CjwKCAjwlaTGBhANEiwAoRgXBX2WvQlCkoLFmObzi1_erzF-2z8Uv9u1epYHzvQShCAuEAfazawU4RoCkp0QAvD_BwE" style="text-decoration:none; target="_blank">Machine Learning Specialization</a> by DeepLearning.AI and Stanford Online to strengthen AI and ML foundations. </p>
+          </div>
+        </div>
+      </li>
+
+      <li class="timeline-item timeline-item-right">
+        <div class="card bg-secondary-subtle shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title"><i class="bi bi-award-fill me-2"></i>Academy for Machine Learning</h5>
+            <h6 class="card-subtitle mb-2 text-muted">June 2024</h6>
+            <p class="card-text">Completed the UT Austin <a href="https://www.cs.utexas.edu/engage/outreach/academies/machine-learning" style="text-decoration:none; target="_blank">Machine Learning</a> summer program, gaining hands-on experience in model development, AI coding practices, and industry-academic collaboration. <a href="https://drive.google.com/file/d/13D1uBjlU9b3Wiv0iT6qVeVPaNKn4quUs/view?usp=sharing" style="text-decoration:none;color:green" target="_blank">View Certificate</a>.</p>
+          </div>
+        </div>
+      </li>
+
+      <li class="timeline-item timeline-item-left">
+        <div class="card bg-info-subtle shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title"><i class="bi bi-gear-wide-connected me-2"></i>Stringing Job Portal</h5>
+            <h6 class="card-subtitle mb-2 text-muted">November 2024</h6>
+            <p class="card-text">Developed a racquet stringing job <a href="https://github.com/nilayarangil/StringingStore" style="text-decoration:none; target="_blank">portal</a> using ASP.NET, C#, MVC framework, and SQL Server to streamline operational tracking.</p>
+          </div>
+        </div>
+      </li>
+ <li class="timeline-item timeline-item-right">
+        <div class="card bg-secondary-subtle shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title"><i class="bi bi-house-heart-fill me-2"></i>Launched AI and Machine Learning Club</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Aug 2025</h6>
+            <p class="card-text">Launched AI and Machine learning club for pearland communities.</p>
+          </div>
+        </div>
+      </li>
+
+
+    </ul>
   </div>
-</section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
   <footer class="footer fixed-bottom">
     <div class="container text-center">
       <div>© Copyright 2022 <b>Nilay Arangil</b>. All Rights Reserved.</div>    
